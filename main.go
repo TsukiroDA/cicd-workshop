@@ -20,7 +20,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	
 	fmt.Fprintf(w, "Hello, it is %s<br />", timeString)
 	fmt.Fprintf(w, "Today is: <b>%s</b>", today)
-	fmt.Fprintf("This is now created via CI/CD pipeline")
+	fmt.Fprintf(w, "This is now created via CI/CD pipeline")
 }
 
 func getMinute(minute int, second int) int {
