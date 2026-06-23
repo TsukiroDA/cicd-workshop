@@ -38,7 +38,7 @@ jobs:
       - name: Docker Login 
         uses: docker/login-action@v2.1.0
         with: 
-          username: ${{ secrets.DOCKERHUB_USER }}
+          username: ${{ secrets.DOCKERHUB_USER }} # CI/CD trigger & important, DOCKERHUB_USER must be verbatim in the secrets in GitHub
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build Docker Image
