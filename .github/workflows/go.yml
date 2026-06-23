@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v7 #offizielle GitHub Action, um den Code aus dem Repository in die virtuelle Maschine zu klonen
 
       - name: Set up Go #verwendet die GitHub Action actions/setup-go@v3, um Go in der gewünschten Version (1.19) zu installieren
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@v6 #new version
         with:
           go-version: 1.19
 
